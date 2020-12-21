@@ -8,12 +8,14 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 })
 export class UserComponent implements OnInit {
   public id: string;
+  public name: string;
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = paramMap.get("id");
+      this.name = paramMap.get("name");
     });
   }
 }
