@@ -8,6 +8,7 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 })
 export class UserComponent implements OnInit {
   public id: string;
+
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
